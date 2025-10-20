@@ -16,6 +16,9 @@ a {
     text-decoration: none;
 }
 
+.purple {
+    color: #6415ff;
+}
 
 /* LANDING */
 
@@ -74,9 +77,124 @@ li {
     padding: 10px 32px;
     list-style: none;
     line-height: 1.5;
+    font-weight: 500;
 }
 
 .btn__menu {
     position: absolute;
+}
+
+.container {
+    padding: 96px 0;
+}
+
+.row {
+    display: flex;
+}
+h1 {
+    text-align: center;
+    margin: 16px;
+}
+
+.header__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__description--para {
+    margin: 16px;
+}
+
+.header__email {
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.header__customers--title {
+    margin-bottom: 16px;
+}
+
+.header__email--input {
+    width: 100%;
+    border: 2px solid rgb(229,231,253);
+    border-radius: 500px;
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__email--btn {
+    z-index: 2;
+    background-color: #6415ff;
+    font-size: 20px;
+    margin: 8px;
+    height: 75%;
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+
+}
+.header__img {
+    width: 100%;
+    padding-left: 24px;
+}
+
+.header__customers {
+    width: 100%;
+    padding-right: 64px;
+}
+
+.header__customers{
+    opacity: .5;
+}
+
+/* FEATURES */
+
+#features {
+    position: relative;
+}
+
+.row__narrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.section__tag {
+    margin-bottom: 16px;
+}
+
+.section__title {
+    margin-bottom: 16px;
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(36, 62, 99);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.section__para {
+    margin: 0 16px 16px 16px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
 }
 
