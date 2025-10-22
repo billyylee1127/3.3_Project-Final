@@ -192,9 +192,42 @@ h1 {
     margin: 0 16px 16px 16px;
 }
 
-.features {
+.feature {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 40px;
 }
 
+.feature__row {
+    width: calc(100% / 3);
+    padding: 16px 32px;
+    display: flex;
+}
+
+.feature__img--wrapper {
+    border: 1px solid #e5e7eb;
+    border-radius: 500px;
+    padding:20px;
+    height: 11vh;
+    margin-right: 8px;
+}
+
+.feature__title {
+    color: #243e63;
+    margin-bottom: 16px;
+
+}
+
+.feature__para {
+    color: rgb(124, 139, 161);
+    line-height: 2;
+}
+
+
+/* QUALITY */
+
+.quality__desription {
+    display: flex;
+    flex-direction: column;
+}
