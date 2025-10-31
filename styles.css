@@ -305,14 +305,16 @@ button {
 }
 
 .steps__img {
+    position: absolute;
     width: 100%;
     z-index: 2;
     padding: 0 48px;
+    bottom: 160px;
 }
 
 .steps__grid {
     position: absolute;
-    bottom: -100%;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     width: 10rem;
@@ -323,6 +325,9 @@ button {
     fill: currentcolor;
 }
 
+.steps__description {
+    position: relative;
+}
 
 .step__discription {
     display: flex;
