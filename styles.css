@@ -998,6 +998,10 @@ footer {
         align-items: center;
     }
 
+    .header__description--para {
+        margin-bottom: 32px;
+    }
+
     .header__email {
         display: flex;
         flex-direction: column;
@@ -1017,6 +1021,36 @@ footer {
         height: 40px;
         padding: 8px;
     }
+
+    .header__customers--title {
+        margin: 24px 0 16px 0;
+        text-align: center;
+    }
+
+    .header__customers {
+        padding-right: 0;        
+    }
+
+    .section__title, .section__para {
+        text-align: center;
+    }
+
+    .feature__row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature__img--wrapper{
+    }
+
+    
+   
 }
 
 
