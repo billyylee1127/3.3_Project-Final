@@ -25,9 +25,6 @@ a {
     color: #6415ff;
 }
 
-a {
-    text-decoration: none;
-}
 
 a:hover {
     text-decoration: underline;
@@ -36,7 +33,7 @@ a:hover {
 .btn__menu {
     background-color: transparent;
     font-size: 36px;
-    text-align: center;
+    display: none;
 }
 
 .menu__backdrop {
@@ -45,21 +42,31 @@ a:hover {
     left: 0;
     right: 0;
     height: 45vh;
-    background-color: rgb(229, 231, 235);
+    background-color: #fff;
     z-index: 4;
     padding: 32px;    
     border-radius: 8px;
-    transition: 300ms;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.menu__open .menu__backdrop {
-    display: flex;
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
 }
 
 .menu__links {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .menu__list{
@@ -68,6 +75,8 @@ a:hover {
 
 .menu__link {
     font-size: 20px;
+    color: #242424;
+    font-weight: 600;
 }
 
 .btn__menu--close {
@@ -84,7 +93,7 @@ a:hover {
 
 
 nav {
-    margin: 24px 32px;
+    margin: 24px 24px;
     position: relative;
 }
 
@@ -112,7 +121,7 @@ nav {
     font-weight: bold;
 }
 
-.nav_links {
+.nav__links {
     display: flex;
     padding: 8px;
     margin-right: 16px;
@@ -139,9 +148,7 @@ li {
     font-weight: 500;
 }
 
-.btn__menu {
-    position: absolute;
-}
+
 
 .container {
     padding: 96px 0;
@@ -972,3 +979,57 @@ footer {
     width: 20px;
     height: 20px;
 }
+
+
+/* SMALL PHONES, TABLETS, LARGE SMART PHONES */
+
+@media (max-width: 768px) {
+    .row__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header__description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__email--input {
+        width: 90%;
+        position: static;
+        padding: 16px 0px 16px 16px;
+        text-align: center;
+        height: 8px;
+    }
+
+    .header__email--btn {
+        width: 90%;
+        text-align: center;
+        height: 40px;
+        padding: 8px;
+    }
+}
+
+
+
+/* SMALL PHONES, LARGE PHONES */
+
+@media (max-width: 550px) {
+    .nav__links {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+}
+
