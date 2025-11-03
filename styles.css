@@ -284,10 +284,12 @@ button {
 
 .feature__img--wrapper {
     border: 1px solid #e5e7eb;
-    border-radius: 500px;
+    border-radius: 50%;
     padding:20px;
-    height: 11vh;
-    margin-right: 8px;
+    height: 64px;
+    width: 64px;
+    6margin-right: 16px;
+    
 }
 
 .feature__title {
@@ -1065,7 +1067,7 @@ footer {
     }
 
     .feature__row {
-        width: 70%;
+        width: 75%;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -1073,25 +1075,26 @@ footer {
     }
 
     .feature__img--wrapper{
-        width: 60px;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 24px;
-        border-radius: 50%
     }
 
      #quality .row, #values .row {
         flex-direction: column-reverse;
     }
-
-
-    .quality__description {
-        margin-top: 112px;
-    } 
-
+   
     .quality__description {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 240px;
+        margin-top: 112px;
         margin-left: 64px;
     }
 
