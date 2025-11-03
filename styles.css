@@ -771,6 +771,17 @@ button {
     margin: 0 auto;
 }
 
+.start__container {
+    padding: 96px 0;
+    width: 100%;
+    background-color: rgb(100, 21, 255);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .start__blob--1 {
     position: absolute;
     bottom: 0px;
@@ -793,15 +804,7 @@ button {
     opacity: 0.5;
 }
 
-.start__container {
-    padding: 96px 0;
-    width: 100%;
-    background-color: rgb(100, 21, 255);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .start__row {
     width: 100%;
@@ -1162,6 +1165,11 @@ footer {
 
     .start__container {
         margin: 0 32px;
+        position: relative;
+    }
+
+
+    
     }
 
     .start__buttons {
