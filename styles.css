@@ -304,18 +304,26 @@ button {
 
 /* QUALITY */
 
-.quality__row {
+#quality .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.quality__desription {
-    display: flex;
-    flex-direction: column;
-    margin-right: 0;
-    padding: 48px;
+.quality__description, .quality_img {
+    width: 50%;
 }
+
+.quality__description {
+    max-width: 576px;
+    margin-right: 64px;
+}
+
+.img {
+    width: 100%;
+}
+
+
 
 .section__tag {
     margin: 0 16px 0 16px;
@@ -334,6 +342,7 @@ button {
 }
 
 
+
 .quality__img--wrapper {
     position: relative;
     border: 1px solid rgb(229, 231, 235);
@@ -343,7 +352,7 @@ button {
 }
 
 .quality__img {
-    width: 100%;
+    max-width: 100%;
     z-index: 1;
     position: relative;
 }
@@ -395,7 +404,7 @@ button {
     position: relative;
 }
 
-.step__discription {
+.step__description {
     display: flex;
     flex-direction: column;
     margin-left: 24px;
@@ -418,6 +427,7 @@ button {
     font-size: 36px;
     font-weight: 600;
     line-height: 1;
+    margin-left: 24px;
 }
 
 .step__title {
@@ -757,6 +767,8 @@ button {
 #start .row {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .start__blob--1 {
@@ -984,6 +996,15 @@ footer {
 /* SMALL PHONES, TABLETS, LARGE SMART PHONES */
 
 @media (max-width: 768px) {
+    .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .testimonials__description, .testimonials__img {
+        width: 100%;
+        max-width: 448px;
+    }
+
+     {
+        margin-left: 64px;
+    }
+    
     .row__header {
         display: flex;
         flex-direction: column;
@@ -1031,27 +1052,153 @@ footer {
         padding-right: 0;        
     }
 
-    .section__title, .section__para {
+    .section__title, .section__para, .section__tag {
         text-align: center;
     }
 
-    .feature__row {
-        width: 100%;
+     .feature {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .feature {
+    .feature__row {
+        width: 65%;
         display: flex;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
     .feature__img--wrapper{
+        width: 68px;
+        margin-bottom: 24px;
     }
 
+     #quality .row, #values .row {
+        flex-direction: column-reverse;
+    }
+
+
+    .quality__description {
+        margin-top: 112px;
+    } 
+
+    .quality__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 240px;
+        margin-left: 64px;
+    }
+
+    #steps .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step__number, .step__title, .step__para {
+        text-align: center;
+    }
+
+    .step__number {
+        margin-bottom: 12px;
+    }
+
+    .step__description {
+        margin-bottom: 24px;
+    }
+
+    .value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .values__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value__para {
+        text-align: center;
+        margin-left: 36px;
+    }
+
+    .btn__values {
+        margin-left: 124px;
+    }
+
+    .plans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #testimonials .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial__profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start__container {
+        margin: 0 32px;
+    }
+
+    .start__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start__button {
+        margin: 8px;
+    }
+
+    .start__button:nth-child(2) {
+        margin-right: 32px;
+    }
+
+
+
+
+
+
+   
     
+
    
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1065,5 +1212,8 @@ footer {
     .btn__menu {
         display: block;
     }
+
+   
+    
 }
 
